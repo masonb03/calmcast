@@ -1,6 +1,8 @@
 import { useState } from "react";
 import SelectedWeather from "./components/SelectedWeather";
 import WeatherList from "./components/WeatherList";
+import Nav from "./features/Nav";
+import './App.css';
 
 function App() {
 
@@ -10,9 +12,7 @@ function App() {
 
 
   return (
-    <div>
-      <h1>CalmCast</h1>
-      <h2>Get Your Current Weather!</h2>
+    <div className="app-container">
       <input 
       type="text"
       placeholder="Search for your city..."
